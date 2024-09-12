@@ -2,9 +2,6 @@
 
 #include <stdio.h> 
 int main() {
-  char ra[20] ;
-  printf("ป้อนชื่อของคุณ :");
-  scanf("%s",ra);
-  printf("สวัสดีคุณ %s\n",ra);
+
   return 0;
 }

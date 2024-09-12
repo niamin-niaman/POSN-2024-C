@@ -2,10 +2,6 @@
 
 #include <stdio.h>
 int main() {
-int lon;
-  printf("โปรดป้อนความยาวด้านของสี่เหลี่ยมจตุรัส:");
-  scanf("%d",&lon);
   
-  printf("พื้นที่ของรูปสี่เหลี่ยมจตุรัสคือ: %d ตารางหน่วย\n", lon*lon);
   return 0;
 }
