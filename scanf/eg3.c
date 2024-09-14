@@ -1,7 +1,13 @@
 #include <stdio.h>
 
 int main() {
-  char name[256];
+
+  int len;
+  printf("entef your len string:");
+  scanf("%d",&len);
+
+
+  char name[len];
   
   printf("Enter your name: ");
   scanf("%s", name);
