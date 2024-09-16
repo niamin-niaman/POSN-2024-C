@@ -8,8 +8,8 @@ int main() {
    printf("ค่าของตัวแปร myInt: %d\n", myInt);
 
     // การดำเนินการทางคณิตศาสตร์กับตัวแปร int
-    int x = 10;
-    int y = 6;
+    int x = 6;
+    int y = 10;
     int sum = x + y;
     int difference = x - y;
     int product = x * y;

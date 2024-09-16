@@ -5,7 +5,7 @@ int main() {
     char myChar;
 
     // กำหนดค่าให้กับตัวแปร myChar
-    myChar = 'F';
+    myChar = 'A';
 
     // แสดงค่าของตัวแปร myChar บนหน้าจอ
     printf("ค่าของตัวแปร myChar: %c\n", myChar);
