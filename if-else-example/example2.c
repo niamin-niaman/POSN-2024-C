@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main() {
   
@@ -6,7 +7,9 @@ int main() {
   printf("กรุณาระบุอุณหภูมิ: ");
   scanf("%f", &temperature);
 
-  if (temperature > 30) {
+  bool isHot = temperature > 30;
+
+  if (isHot) {
     printf("อากาศร้อน\n");
   }
 

@@ -3,12 +3,11 @@
 
 int main() {
 
-  printf("do this statement first \n");
+  // printf("do this statement first \n");
 
-  // // เป็นภาษาไทย
-  if (true) {
-    printf("do this statement\n");
-  }
+  // if (true) {
+  //   printf("do this statement\n");
+  // }
 
   // if (true) {
   //   printf("do this statement in if-else\n");
@@ -22,21 +21,21 @@ int main() {
   //   printf("do this statement in if-else\n");
   // }
 
-  // bool b = true;
-  // bool a = false;
+  bool b = true;
+  bool a = true;
   // falsy , truthy
 
-  // if (a) {
+  // if (b) {
   //   printf("do this statement\n");
   // }
 
-  // a = false;
+  a = false;
 
-  // if (a) {
-  //   printf("do this statement in if-else\n");
-  // } else {
-  //   printf("wont do this statement in if-else\n");
-  // }
+  if (a) {
+    printf("do this statement in if-else\n");
+  } else {
+    printf("wont do this statement in if-else\n");
+  }
 
   // if (b) {
   //   printf("wont do this statement in if-else\n");

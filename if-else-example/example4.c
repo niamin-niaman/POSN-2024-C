@@ -13,7 +13,7 @@ int main() {
     printf("คุณเป็นวัยรุ่น\n");
   } else if (age < 80) {
     printf("คุณเป็นผู้ใหญ่\n");
-  } else if (age < 2000 ){
+  } else {
     printf("คุณเป็นอมตะ\n");
   }
 
