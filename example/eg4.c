@@ -5,16 +5,16 @@ int main() {
   int found = 0;
 
   printf("sizeof(n): %ld\n",sizeof(n) );
-  printf("sizeof(n[0]): %ld\n",sizeof(n[0]));
-  printf("sizeof(n) / sizeof(n[0]): %ld\n",sizeof(n) / sizeof(n[0]) );
+  printf("sizeof(n[3]): %ld\n",sizeof(n[3]));
+  printf("sizeof(n) / sizeof(n[3]): %ld\n",sizeof(n) / sizeof(n[3]) );
   // $ld stand of long unsigned int ( sizeof(n) return long unsinged int )
 
-  for (int i = 0; i < ( sizeof(n) / sizeof(n[0]) ); i++) {
+  for (int i = 0; i < ( sizeof(n) / sizeof(n[3]) ); i++) {
     // printf("i : %d\n", i);
     printf("n[%d] : %d\n", i, n[i]);
     if (n[i] == 3) {
       found++;
-      break;
+      // break;
     }
   }
 
