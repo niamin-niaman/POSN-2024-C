@@ -1,3 +1,5 @@
+// see visual on slide
+
 #include <stdio.h>
 
 int main() {

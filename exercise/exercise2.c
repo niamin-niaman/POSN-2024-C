@@ -14,7 +14,6 @@ int main() {
   int scores[5];  // อาร์เรย์สำหรับคะแนน
   char grades[5]; // อาร์เรย์สำหรับเกรด
   printf("Hello");
-
   
   return 0;
 }

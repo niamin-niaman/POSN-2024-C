@@ -16,6 +16,7 @@ int main() {
   }
 
   // คำนวณค่าเฉลี่ย
+  // cast value type
   average = (double) sum / n;
   // double = (double) int / int
 
