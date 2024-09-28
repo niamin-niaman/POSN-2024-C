@@ -14,31 +14,32 @@ int main() {
   }
   printf("\n");
 
-  // for (int i = 0; i < n - 1; i++) {
-  //   for (int j = 0; j < n - i - 1; j++) {
-  //     if (data[j] > data[j + 1]) {
-  //       // สลับค่าถ้าต้องการเรียงลำดับจากน้อยไปหามาก
-  //       int temp = data[j];
-  //       data[j] = data[j + 1];
-  //       data[j + 1] = temp;
-  //     }
-  //   }
-  // }
-
-  // เรียงลำดับข้อมูล
-  int swapped = 0;
-  do {
-    swapped = 0;
-    for (int i = 0; i < n - 1; i++) {
-      if (data[i] > data[i + 1]) {
+  for (int i = 0; i < n - 1; i++) {
+    for (int j = 0; j < n - i - 1; j++) {
+      printf("i: %d, j: %d\n",i,j);
+      if (data[j] > data[j + 1]) {
         // สลับค่าถ้าต้องการเรียงลำดับจากน้อยไปหามาก
-        int temp = data[i];
-        data[i] = data[i + 1];
-        data[i + 1] = temp;
-        swapped = 1;
+        int temp = data[j];
+        data[j] = data[j + 1];
+        data[j + 1] = temp;
       }
     }
-  } while (swapped);
+  }
+
+  // เรียงลำดับข้อมูล
+  // int swapped = 0;
+  // do {
+  //   swapped = 0;
+  //   for (int i = 0; i < n - 1; i++) {
+  //     if (data[i] > data[i + 1]) {
+  //       // สลับค่าถ้าต้องการเรียงลำดับจากน้อยไปหามาก
+  //       int temp = data[i];
+  //       data[i] = data[i + 1];
+  //       data[i + 1] = temp;
+  //       swapped = 1;
+  //     }
+  //   }
+  // } while (swapped);
 
   // พิมพ์ข้อมูลหลังจากเรียงลำดับ
   printf("ข้อมูลหลังจากเรียงลำดับจากน้อยไปหามาก:\n");

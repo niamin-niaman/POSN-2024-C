@@ -6,7 +6,13 @@ int main()
 
   // creating 2d array
   // int arr2d[2][2] = {1, 2, 3, 4};
-  int arr2d[2][2] = {{1, 2}, {3, 4}};
+  int arr2d[3][3] =
+      {
+          {1, 2}, {3, 4, 5}, {6}};
+
+  // 2 <- 0 , 1
+  // 3 <- 1 , 0 / 0 , 1 / 1 , 1
+  // 4 <- 1 , 1
 
   // printf("%d\n",arr2d[0][0]);
   // printf("%d\n",arr2d[0][1]);
@@ -16,16 +22,26 @@ int main()
   // printf("2D Array: \n");
   // printing 2d array
   // for (int i = 0; i < 2; i++) {
+
   //   for (int j = 0; j < 2; j++) {
+  //     // printf("i:%d, j:%d\n",i,j);
   //     printf("%d (i:%d ,j:%d) \n", arr2d[i][j], i, j);
   //   }
   //   printf("\n");
+
   // }
 
   // creating 3d array
-  int arr3d[2][2][2] = {{{1, 2}, {3, 4}}, {{5, 6}, {7, 8}}};
+  int arr3d[2][2][2] = {
+      {{1, 2}, {3, 4}},
+      {{5, 6}, {7, 8}}};
 
-  int count = 1;
+  // 6
+  // 1 , 0 , 1
+  // 
+  // printf("%d \n", arr3d[0][1][0]);
+
+  // int count = 1;
   // printf("\n3D Array: \n");
   // printing 3d array
   // for (int i = 0; i < 2; i++) {
@@ -38,20 +54,42 @@ int main()
   //   printf("\n");
   // }
 
-  printf("\n3D Array:\n");
-  for (int i = 0; i < 2; i++)
-  {
-    printf("Layer %d:\n", i);
-    for (int j = 0; j < 2; j++)
-    {
-      for (int k = 0; k < 2; k++)
-      {
-        printf("%3d ", arr3d[i][j][k]);
+  // printf("\n3D Array:\n");
+  // for (int i = 0; i < 2; i++)
+  // {
+  //   printf("Layer %d:\n", i);
+  //   for (int j = 0; j < 2; j++)
+  //   {
+  //     for (int k = 0; k < 2; k++)
+  //     {
+  //       printf("%3d ", arr3d[i][j][k]);
+  //     }
+  //     printf("\n");
+  //   }
+  //   printf("\n");
+  // }
+
+  int arr4d[2][2][2][2] = 
+    { // 1
+      { // 2
+        { // 3
+          { // 4
+            1
+          } 
+        }
+      },
+      { // 2
+        { // 3
+          { // 4
+            2
+          } 
+        }
       }
-      printf("\n");
-    }
-    printf("\n");
-  }
+    } 
+  ;
+
+  printf("%d\n",arr4d[0][0][0][0]);
+  printf("%d\n",arr4d[1][0][0][0]);
 
   return 0;
 }
